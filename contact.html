@@ -31,17 +31,21 @@
                     </header>
                     <img id="divider" src="images/divider.png" alt="divider">
                     <article>
-                        <h1>MORE</h1>
-                        <h2><a href="reviews.html">REVIEWS</a></h2>
-                        <p>See what the players think of Mosa Lina with a history of it's reviews.</p>
-                    </article>
-                        <article>
-                        <h2><a href="contact.html">CONTACT</a></h2>
-                        <p>Did I make a mistake? Is there something you think should be added? Tell me about it here!</p>
-                    </article>
-                    <article>
-                        <h2><a href="monalisa.html">THE MONA LISA</a></h2>
-                        <p>Are you wondering why the game is named after this painting? Find out on this page.</p>
+                        <h1>CONTACT</h1>
+                        <form action="http://www.foo.com/" method="get">
+                            <label for="name">Name<span class="required">*</span>: </label>
+                            <input type="text" id="name" name="name" placeholder="Type your name here...">
+                            <label for="email">Email: </label>
+                            <input type="text" id="email" name="email" placeholder="Type your email here...">
+                            <span>Query type: </span>
+                            <input type="radio" id="question" name="querytype" value="question">Question
+                            <input type="radio" id="correction" name="querytype" value="correction">Correction
+                            <input type="radio" id="suggestion" name="querytype" value="suggestion">Suggestion
+                            <input type="radio" id="other" name="querytype" value="other">Other
+                            <label for="query">Query</label>
+                            <textarea id="query" name="query" placeholder="Type anything here..." style="height:200px"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
                     </article>
                 </main>
             </div>

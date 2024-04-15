@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: ADLaM Display, Arial, sans-serif;
+    font-family: "ADLaM Display", Arial, sans-serif;
     color: white;
     background-color: rgb(61, 61, 61);
     background-image: url('../images/bg.png');
@@ -75,17 +75,23 @@ p {
     
 
 footer {
-    background-color: black;
+    background-color: rgba(1, 6, 17, 0.914);
     color: white;
     text-align: center;
-    padding: 4px;
+    padding-bottom: 10px;
     width: 100%;
     margin-top: 10px;
+    bottom: 0;
     position: absolute;
+    height: 2.5rem;
+}
+
+footer p {
+    margin-bottom: 0;
 }
 
 footer p a {
-    color: white;
+    color: rgb(157, 248, 192);
     text-decoration: none;
 }
 
@@ -98,7 +104,7 @@ aside h2{
     text-align: center;
     font-size: 2em;
 }
-aside p{
+aside li{
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 20px;
@@ -130,3 +136,88 @@ a {
     color: rgb(44, 132, 50);
     text-decoration: none ;
 }
+
+tr, th, td {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px;
+    border: 2px dashed rgb(44, 132, 50);
+    border-radius: 10%;
+    background-color: rgb(48, 99, 49);
+    
+}
+
+th, .leftcol {
+    background-color: rgb(27, 48, 28);
+}
+
+#blankcell {
+    border: 3px solid rgb(22, 22, 22);
+    border-radius: 0;
+    background-color: rgb(21, 21, 21);
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 3.1rem;
+}
+
+.columns {
+    column-count: 3;
+    column-rule: 4px dashed rgb(51, 64, 96);
+    column-gap: 50px;
+    padding: 2px;
+    width: 80%;
+    margin: auto;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px dashed rgb(62, 121, 132);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+  
+  input[type=submit] {
+    background-color: rgb(44, 132, 50);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(27, 48, 28);
+  }
+
+  #divider {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .required {
+    font-weight: bold;
+    color: red;
+  }
+
+  #modlist {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    list-style-type:square;
+  }
+
+  .emp {
+    color: rgb(247, 159, 159);
+    font-weight: bolder;
+  }
